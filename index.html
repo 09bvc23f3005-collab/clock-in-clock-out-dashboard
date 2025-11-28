@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChronoBot Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=gg+sans:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              discord: {
+                dark: '#36393f',
+                darker: '#2f3136',
+                darkest: '#202225',
+                light: '#40444b',
+                brand: '#5865F2',
+                green: '#3BA55C',
+                red: '#ED4245',
+                text: '#dcddde',
+                muted: '#72767d',
+                input: '#40444b'
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              discord: ['gg sans', 'Inter', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar for Discord feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #202225;
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-track {
+        background-color: #2f3136;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background-color: #202225;
+      }
+      /* Light mode scrollbar */
+      :not(.dark) ::-webkit-scrollbar-thumb {
+        background-color: #e5e7eb;
+      }
+      :not(.dark) ::-webkit-scrollbar-track {
+        background-color: #f3f4f6;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "date-fns": "https://aistudiocdn.com/date-fns@^4.1.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-100 dark:bg-[#202225] text-gray-900 dark:text-[#dcddde] transition-colors duration-200">
+    <div id="root"></div>
+  </body>
+</html>

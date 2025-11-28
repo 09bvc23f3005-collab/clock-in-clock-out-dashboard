@@ -1,0 +1,5 @@
+{
+  "name": "Copy of ChronoBot: Discord Time Tracker",
+  "description": "A simulation and dashboard for a Discord time-tracking bot. Features a mock chat interface for clocking in/out using Gemini AI for natural language understanding, and a manager dashboard for tracking employee hours and overtime.",
+  "requestFramePermissions": []
+}
